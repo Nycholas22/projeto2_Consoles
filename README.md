@@ -38,3 +38,4 @@ Para testar como o site se comporta em telas de celular:
 ---
 ## 👨‍💻 Nycholas Kelvyn Braga Santos
 *Projeto desenvolvido para a atividade do módulo de HTML e CSS.*
+LINK DE ACESSO:https://nycholas22.github.io/projeto2_Consoles/
