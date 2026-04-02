@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Market - Maranguape/CE</title>
+    <meta name="description" content="Formulário para anúncio e venda de consoles, jogos e acessórios em Maranguape, CE.">
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="formulario-container">
+        <h2>Anuncie seu Console</h2>
+        <p class="subtitulo">Venda rápida para a comunidade de Maranguape - CE</p>
+
+        <form action="#" method="POST">
+            
+            <div class="grupo-campo">
+                <label for="marca">Marca / Plataforma do Console</label>
+                <select id="marca" name="marca" required>
+                    <option value="" disabled selected>Selecione a marca...</option>
+                    <option value="playstation">Sony - PlayStation</option>
+                    <option value="xbox">Microsoft - Xbox</option>
+                    <option value="nintendo">Nintendo</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="modelo">Modelo Específico</label>
+                <input type="text" id="modelo" name="modelo" placeholder="Ex: PS5 com Leitor, Xbox Series S, Switch OLED" required>
+            </div>
+
+            <div class="linha">
+                <div class="grupo-campo">
+                    <label for="armazenamento">Armazenamento</label>
+                    <select id="armazenamento" name="armazenamento" required>
+                        <option value="500gb">500 GB</option>
+                        <option value="1tb">1 TB</option>
+                        <option value="2tb">2 TB ou mais</option>
+                        <option value="cartao">Cartão de Memória</option>
+                    </select>
+                </div>
+                <div class="grupo-campo">
+                    <label for="preco">Preço (R$)</label>
+                    <input type="number" id="preco" name="preco" placeholder="Ex: 2500" min="0" step="0.01" required>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label>Condição do Aparelho</label>
+                <div class="grupo-opcoes">
+                    <div class="opcao-item">
+                        <input type="radio" id="novo" name="condicao" value="novo" required>
+                        <label for="novo">Novo (Lacrado)</label>
+                    </div>
+                    <div class="opcao-item">
+                        <input type="radio" id="seminovo" name="condicao" value="seminovo">
+                        <label for="seminovo">Seminovo</label>
+                    </div>
+                    <div class="opcao-item">
+                        <input type="radio" id="usado" name="condicao" value="usado">
+                        <label for="usado">Usado (Com marcas de uso)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label>Itens Inclusos (Marque o que acompanha)</label>
+                <div class="grupo-opcoes">
+                    <div class="opcao-item">
+                        <input type="checkbox" id="caixa" name="itens" value="caixa">
+                        <label for="caixa">Caixa Original</label>
+                    </div>
+                    <div class="opcao-item">
+                        <input type="checkbox" id="cabos" name="itens" value="cabos">
+                        <label for="cabos">Cabos Originais</label>
+                    </div>
+                    <div class="opcao-item">
+                        <input type="checkbox" id="controle_extra" name="itens" value="controle_extra">
+                        <label for="controle_extra">Controle Extra</label>
+                    </div>
+                    <div class="opcao-item">
+                        <input type="checkbox" id="jogos" name="itens" value="jogos">
+                        <label for="jogos">Jogos (Mídia Física)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="localizacao">Bairro para Retirada (Maranguape)</label>
+                <select id="localizacao" name="localizacao" required>
+                    <option value="" disabled selected>Onde o comprador pode retirar?</option>
+                    <option value="centro">Centro</option>
+                    <option value="novo_maranguape">Novo Maranguape</option>
+                    <option value="parque_sao_joao">Parque São João</option>
+                    <option value="outro">Outro Bairro/Distrito</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="descricao">Descrição Adicional</label>
+                <textarea id="descricao" name="descricao" rows="5" placeholder="Ex: Aparelho com 1 ano de uso, em perfeito estado. Acompanha FIFA 24 e cabo HDMI original. Aceito troca por Nintendo Switch."></textarea>
+            </div>
+
+            <button type="submit">Publicar Anúncio</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
